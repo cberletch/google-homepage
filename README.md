@@ -1,0 +1,1 @@
+This project is an introductory project in the odin project curriculum that uses basic html and css to recreate a shell of the google homepage.
