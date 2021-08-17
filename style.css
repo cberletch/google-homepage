@@ -49,21 +49,43 @@ table {
 
 /* End CSS Reset */
 
-.nav-list {
-    display: flex;
-    list-style-type: none;
-	
+.nav {
+	display: grid;
+	grid-template-columns: 30% 40% 25% 5%;
+	grid-template-areas: "left . right btn";
+	position: fixed;
+  	width: 100%;	
 }
-.nav-list li a {
-	text-decoration: none;
-	color: black;
+
+.nav-left{
+	grid-area:left;
+}
+.nav-left li{
+	display: inline-block;
 	text-align: center;
-	padding: 10px 10px;
-	display: block;
+	padding: 3%;
 }
-.nav-list li button {
-	display:block;
-	margin: 15px;
+.nav-left li a{
+	text-decoration: none;
+	color:black;
+}
+
+.nav-right {
+	grid-area: right;
+}
+
+.nav-right li{
+	text-align: center;
+	padding: 3%;
+}
+.nav-right li a{
+	text-decoration: none;
+	color:black;
+}
+
+.nav-right li button {
+	grid-area: btn;
+	float: right;
 	background-color: #4885ed;
 	color: white;
 	border: none;
@@ -72,10 +94,6 @@ table {
 	bottom: 7px;
 }
 
-.push {
-    margin-left: auto;
-	float: right;
-}
 .center {
 	position: fixed;
 	top: 30%;
@@ -122,4 +140,14 @@ footer p {
 
 footer ul {
     list-style-type: none;
+}
+
+footer .left {
+	display: inline-block;
+	text-align: center;
+	padding: 20px;
+}
+footer .right {
+	padding: 20px;
+	float: right;
 }
