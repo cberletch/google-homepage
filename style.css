@@ -52,18 +52,36 @@ table {
 .nav-list {
     display: flex;
     list-style-type: none;
-	top: 30px;
+	
+}
+.nav-list li a {
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	padding: 10px 10px;
+	display: block;
+}
+.nav-list li button {
+	display:block;
+	margin: 15px;
+	background-color: #4885ed;
+	color: white;
+	border: none;
+	border-radius: 3px;
+	padding: 7px;
+	bottom: 7px;
 }
 
 .push {
     margin-left: auto;
+	float: right;
 }
 .center {
 	position: fixed;
 	top: 30%;
 	bottom: 50%;
-	right:40%;
-	left:40%;
+	right:30%;
+	left:30%;
 }
 
 .logo {
@@ -93,6 +111,13 @@ footer {
   	bottom: 0;
   	width: 100%;
   	color: grey;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+}
+
+footer p {
+	text-align: center;
+	padding: 20px;
 }
 
 footer ul {
